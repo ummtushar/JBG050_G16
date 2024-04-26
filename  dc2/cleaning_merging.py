@@ -24,9 +24,12 @@ def merging(dt = data, merging_on = filename, savelocation = finished):
     df = pd.DataFrame()
     for i in range(len(list)):
         try:
-            df = df._append(pd.read_csv(f"{dt}/{list[i]}/{list[i]}-{merging_on}.csv"))
+            df_temp = pd.read_csv(f"{dt}/{list[i]}/{list[i]}-{merging_on}.csv")
+            df_temp["Month"] = list[i]
+            df = df._append(df_temp)
         except:
             print(f"{list[i]} {merging_on} does not exist")
 
     df.to_csv(Path(f"{savelocation}/merged-{merging_on}.csv"), sep=",")
     return df
+merging()
