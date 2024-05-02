@@ -42,12 +42,12 @@ boroughs = df_merged['Borough'].unique()
 
 # One-Hot Encoding for 'Measure' column
 df_merged = pd.get_dummies(df_merged, columns=['Measure'])
+df_merged = pd.get_dummies(df_merged, columns=['Ethnicity'])
 
-# Label Encoding for 'Ethnicity' column
-le = LabelEncoder()
-df_merged['Ethnicity'] = le.fit_transform(df_merged['Ethnicity'])
-ethnicity_mapping = {index: label for index, label in enumerate(le.classes_)}
-print(ethnicity_mapping)
+# # Label Encoding for 'Ethnicity' column
+# le = LabelEncoder()
+# df_merged['Ethnicity'] = le.fit_transform(df_merged['Ethnicity'])
+# ethnicity_mapping = {index: label for index, label in enumerate(le.classes_)}
 
 for borough in boroughs:
     df_borough = df_merged[df_merged['Borough'] == borough]
@@ -67,7 +67,7 @@ for borough in boroughs:
 
     #coeffcients
     print(f"Coefficients for {borough}: {model.coef_}")
-    
+
     #MSE
     y_pred = model.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
