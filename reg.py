@@ -70,24 +70,24 @@ def trust_factors(df_merged, one_hot):
         mse = mean_squared_error(y_test, y_pred)
         print(f"MSE for {borough}: {mse}\n")
 
-    # Plot coefficients for each borough
-    plt.figure(figsize=(15, 10))
+    # # Plot coefficients for each borough
+    # plt.figure(figsize=(15, 10))
 
-    fig, ax = plt.subplots()
+    # fig, ax = plt.subplots()
 
-    for borough, coefs in borough_coefs.items():
-        ax.bar(coefs.keys(), coefs.values(), label=borough)
+    # for borough, coefs in borough_coefs.items():
+    #     ax.bar(coefs.keys(), coefs.values(), label=borough)
 
-    ax.set_xlabel('Coefficient Name')
-    ax.set_ylabel('Coefficient Value')
+    # ax.set_xlabel('Coefficient Name')
+    # ax.set_ylabel('Coefficient Value')
 
-    # Set legend size
-    ax.legend(prop={'size': 6})
+    # # Set legend size
+    # ax.legend(prop={'size': 6})
 
-    # Rotate x-axis labels
-    plt.xticks(rotation=45)
+    # # Rotate x-axis labels
+    # plt.xticks(rotation=45)
 
-    plt.show()
+    # plt.show()
 
 
 trust_factors(df_merged, ['Measure', 'Ethnicity'])
