@@ -7,6 +7,6 @@ df_ss = df_ss.rename(columns={"Borough of Stop": "Borough"})
 
 merged_df = pd.merge(df_MPS, df_ss, on= "Borough")
 # print(merged_df.head())
-print(merged_df.info())
+# print(merged_df.info())
 
 merged_df.to_csv("data/Stop-and-Search-merged.csv", sep = ";", index=False)
