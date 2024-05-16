@@ -29,6 +29,8 @@ print("Data loaded and processed successfully")
 df_merged = pd.merge(df1, df2, on=['Date'], how='outer')
 df_merged = df_merged.dropna()
 
+print(df_merged.head())
+
 print("Data merged successfully")
 
 ############################ TRAINING THE REGRESSION MODEL ############################
