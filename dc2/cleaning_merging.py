@@ -83,6 +83,10 @@ categorical = "Abstraction Type"
 numeric = "Abstraction Minutes"
 time_spent_df = categorical_encode_and_expand(df, categorical, numeric)
 print(time_spent_df.head())
+# save as csv
+time_csv_path = Path("data/Final datasets raw/time_spent.csv")
+time_spent_df.to_csv(time_csv_path, sep=",", index=False)
+
 #print(categorical_one_hot_encode(df, categorical, numeric))
 attitude_path = Path("data/PAS.csv")
 df = pd.read_csv(attitude_path, sep = ';')
