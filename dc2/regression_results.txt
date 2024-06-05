@@ -1,0 +1,459 @@
+Call:
+lm(formula = Y ~ ., data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-66.732  -2.494   2.780   7.778  26.311 
+
+Coefficients: (1 not defined because of singularities)
+                                                                                        Estimate
+(Intercept)                                                                            1.047e+02
+Proportion..Good.Job..local                                                            8.106e-02
+Proportion.Contact.ward.officer                                                       -2.495e-02
+Proportion.Informed.local                                                             -3.997e-02
+Proportion.Listen.to.concerns                                                          7.022e-02
+Proportion.Treat.everyone.fairly                                                       6.449e-02
+Proportion.Trust.MPS                                                                   5.159e-02
+Proportion.Understand.issues                                                           9.267e-02
+stops_cleaned_Search.Type_STOP_SEARCH                                                         NA
+strengths_cleaned_Rank.Constable                                                      -1.438e-05
+strengths_cleaned_Rank.PSCO                                                           -8.607e-06
+time_spent_cleaned_Abstraction.Type_Aid                                               -2.762e-05
+time_spent_cleaned_Abstraction.Type_CAD                                               -4.078e-04
+time_spent_cleaned_Abstraction.Type_Court                                             -6.589e-04
+time_spent_cleaned_Abstraction.Type_Custody                                           -1.700e-03
+time_spent_cleaned_Abstraction.Type_Local.Aid                                         -1.598e-05
+time_spent_cleaned_Abstraction.Type_Not.Abstracted                                    -7.799e-06
+time_spent_cleaned_Abstraction.Type_Staffing.Up                                       -4.889e-07
+time_spent_cleaned_Abstraction.Type_Training                                          -5.192e-05
+granular_cleaned_Household_6                                                           5.356e+01
+granular_cleaned_Household_Other                                                       7.733e+01
+granular_cleaned_Gender_Other                                                         -3.884e+02
+granular_cleaned_Age_Refused                                                           4.969e+02
+granular_cleaned_Orientation_Don.t.know                                               -1.233e+02
+granular_cleaned_Orientation_Heterosexual                                             -4.231e+01
+granular_cleaned_Orientation_Non.Heterosexual                                         -4.297e+01
+granular_cleaned_Orientation_Non.Heterosexual..Gay..Lesbian..Bisexual..None.of.these. -1.526e+02
+granular_cleaned_Ethnicity_Mixed                                                       1.888e+01
+granular_cleaned_Qualification_BTEC.Level.1                                            1.014e+02
+granular_cleaned_Qualification_BTEC.level.2                                           -1.808e+01
+granular_cleaned_Qualification_BTEC.level.3                                           -4.725e+01
+granular_cleaned_Qualification_Don.t.know                                             -3.019e+02
+granular_cleaned_Qualification_HNC.or.HND.BTEC.level.4                                 2.712e+01
+granular_cleaned_Qualification_ONC..OND.or.City.and.Guilds                            -2.954e+01
+granular_cleaned_Qualification_Other                                                  -1.008e+02
+granular_cleaned_Qualification_Refused                                                 4.267e+01
+granular_cleaned_Qualification_Trade.apprenticeship                                   -5.008e+01
+granular_cleaned_Employment_Don.t.know                                                 2.493e+01
+granular_cleaned_Employment_House.Person                                              -2.552e+01
+granular_cleaned_Employment_House.person                                              -1.086e+02
+granular_cleaned_Employment_Not.Working                                               -2.503e+01
+granular_cleaned_Employment_Other                                                     -2.715e+01
+granular_cleaned_Employment_Student.Education                                         -1.925e+01
+granular_cleaned_Employment_Unemployed                                                -5.900e+01
+granular_cleaned_Employment_Working.PT                                                -1.142e+01
+use_of_force_cleaned_CED.Used                                                          1.478e+01
+use_of_force_cleaned_Firearms.Aimed                                                    1.967e+01
+time_spent_cleaned_Abstraction.Type_Aid_lag                                            3.706e-05
+time_spent_cleaned_Abstraction.Type_CAD_lag                                           -5.004e-04
+time_spent_cleaned_Abstraction.Type_Court_lag                                          1.289e-03
+time_spent_cleaned_Abstraction.Type_Custody_lag                                        1.264e-03
+time_spent_cleaned_Abstraction.Type_Local.Aid_lag                                      6.659e-05
+time_spent_cleaned_Abstraction.Type_Not.Abstracted_lag                                -2.047e-05
+time_spent_cleaned_Abstraction.Type_Staffing.Up_lag                                   -3.176e-05
+time_spent_cleaned_Abstraction.Type_Training_lag                                      -1.225e-04
+use_of_force_cleaned_CED.Used_lag                                                     -1.640e+01
+use_of_force_cleaned_Firearms.Aimed_lag                                                1.024e+01
+Borough_Barnet                                                                         2.048e+00
+Borough_Bexley                                                                         3.958e+00
+Borough_Brent                                                                          3.946e+00
+Borough_Bromley                                                                        1.403e+00
+Borough_Camden                                                                        -2.487e+00
+Borough_Croydon                                                                       -2.972e+00
+Borough_Ealing                                                                         3.318e+00
+Borough_Enfield                                                                       -2.466e+00
+Borough_Greenwich                                                                      4.031e+00
+Borough_Hackney                                                                        4.875e+00
+Borough_Hammersmith.and.Fulham                                                         4.373e+00
+Borough_Haringey                                                                      -7.491e+00
+Borough_Harrow                                                                         1.982e+00
+Borough_Havering                                                                       1.461e+00
+Borough_Hillingdon                                                                     2.447e+00
+Borough_Hounslow                                                                       1.284e+00
+Borough_Islington                                                                     -2.858e+00
+Borough_Kensington.and.Chelsea                                                         7.925e+00
+Borough_Kingston                                                                      -8.892e+00
+Borough_Lambeth                                                                       -2.531e+00
+Borough_Lewisham                                                                      -4.371e+00
+Borough_Merton                                                                        -1.372e+00
+Borough_Newham                                                                        -5.189e+00
+Borough_Redbridge                                                                      1.995e+00
+Borough_Richmond                                                                      -3.854e-03
+Borough_Southwark                                                                      3.670e+00
+Borough_Sutton                                                                         7.600e+00
+Borough_Tower.Hamlets                                                                  1.588e+00
+Borough_Waltham.Forest                                                                -2.362e+00
+Borough_Wandsworth                                                                    -2.247e+00
+Borough_Westminster                                                                    5.298e+00
+                                                                                      Std. Error
+(Intercept)                                                                            2.914e+01
+Proportion..Good.Job..local                                                            3.014e-02
+Proportion.Contact.ward.officer                                                        5.282e-02
+Proportion.Informed.local                                                              4.664e-02
+Proportion.Listen.to.concerns                                                          2.710e-02
+Proportion.Treat.everyone.fairly                                                       2.736e-02
+Proportion.Trust.MPS                                                                   2.414e-02
+Proportion.Understand.issues                                                           2.968e-02
+stops_cleaned_Search.Type_STOP_SEARCH                                                         NA
+strengths_cleaned_Rank.Constable                                                       8.817e-06
+strengths_cleaned_Rank.PSCO                                                            4.466e-06
+time_spent_cleaned_Abstraction.Type_Aid                                                6.783e-05
+time_spent_cleaned_Abstraction.Type_CAD                                                3.089e-04
+time_spent_cleaned_Abstraction.Type_Court                                              5.070e-04
+time_spent_cleaned_Abstraction.Type_Custody                                            2.541e-03
+time_spent_cleaned_Abstraction.Type_Local.Aid                                          4.653e-05
+time_spent_cleaned_Abstraction.Type_Not.Abstracted                                     9.000e-06
+time_spent_cleaned_Abstraction.Type_Staffing.Up                                        6.267e-05
+time_spent_cleaned_Abstraction.Type_Training                                           5.187e-05
+granular_cleaned_Household_6                                                           2.153e+02
+granular_cleaned_Household_Other                                                       3.913e+01
+granular_cleaned_Gender_Other                                                          3.031e+02
+granular_cleaned_Age_Refused                                                           1.561e+03
+granular_cleaned_Orientation_Don.t.know                                                2.007e+02
+granular_cleaned_Orientation_Heterosexual                                              2.755e+01
+granular_cleaned_Orientation_Non.Heterosexual                                          3.853e+01
+granular_cleaned_Orientation_Non.Heterosexual..Gay..Lesbian..Bisexual..None.of.these.  6.607e+01
+granular_cleaned_Ethnicity_Mixed                                                       3.244e+01
+granular_cleaned_Qualification_BTEC.Level.1                                            7.456e+01
+granular_cleaned_Qualification_BTEC.level.2                                            6.171e+01
+granular_cleaned_Qualification_BTEC.level.3                                            4.668e+01
+granular_cleaned_Qualification_Don.t.know                                              2.279e+02
+granular_cleaned_Qualification_HNC.or.HND.BTEC.level.4                                 3.683e+01
+granular_cleaned_Qualification_ONC..OND.or.City.and.Guilds                             4.081e+01
+granular_cleaned_Qualification_Other                                                   6.206e+01
+granular_cleaned_Qualification_Refused                                                 8.589e+01
+granular_cleaned_Qualification_Trade.apprenticeship                                    5.599e+01
+granular_cleaned_Employment_Don.t.know                                                 3.980e+02
+granular_cleaned_Employment_House.Person                                               2.885e+01
+granular_cleaned_Employment_House.person                                               7.882e+01
+granular_cleaned_Employment_Not.Working                                                2.776e+01
+granular_cleaned_Employment_Other                                                      6.152e+01
+granular_cleaned_Employment_Student.Education                                          2.949e+01
+granular_cleaned_Employment_Unemployed                                                 6.559e+01
+granular_cleaned_Employment_Working.PT                                                 1.818e+01
+use_of_force_cleaned_CED.Used                                                          8.932e+00
+use_of_force_cleaned_Firearms.Aimed                                                    3.556e+01
+time_spent_cleaned_Abstraction.Type_Aid_lag                                            6.927e-05
+time_spent_cleaned_Abstraction.Type_CAD_lag                                            3.123e-04
+time_spent_cleaned_Abstraction.Type_Court_lag                                          5.029e-04
+time_spent_cleaned_Abstraction.Type_Custody_lag                                        2.537e-03
+time_spent_cleaned_Abstraction.Type_Local.Aid_lag                                      4.740e-05
+time_spent_cleaned_Abstraction.Type_Not.Abstracted_lag                                 8.522e-06
+time_spent_cleaned_Abstraction.Type_Staffing.Up_lag                                    6.459e-05
+time_spent_cleaned_Abstraction.Type_Training_lag                                       5.037e-05
+use_of_force_cleaned_CED.Used_lag                                                      1.030e+01
+use_of_force_cleaned_Firearms.Aimed_lag                                                3.994e+01
+Borough_Barnet                                                                         3.929e+00
+Borough_Bexley                                                                         3.908e+00
+Borough_Brent                                                                          3.902e+00
+Borough_Bromley                                                                        3.842e+00
+Borough_Camden                                                                         4.028e+00
+Borough_Croydon                                                                        3.909e+00
+Borough_Ealing                                                                         4.003e+00
+Borough_Enfield                                                                        3.943e+00
+Borough_Greenwich                                                                      4.020e+00
+Borough_Hackney                                                                        4.119e+00
+Borough_Hammersmith.and.Fulham                                                         3.918e+00
+Borough_Haringey                                                                       3.958e+00
+Borough_Harrow                                                                         3.895e+00
+Borough_Havering                                                                       4.207e+00
+Borough_Hillingdon                                                                     3.889e+00
+Borough_Hounslow                                                                       3.884e+00
+Borough_Islington                                                                      4.028e+00
+Borough_Kensington.and.Chelsea                                                         4.108e+00
+Borough_Kingston                                                                       3.941e+00
+Borough_Lambeth                                                                        4.097e+00
+Borough_Lewisham                                                                       3.963e+00
+Borough_Merton                                                                         3.869e+00
+Borough_Newham                                                                         3.840e+00
+Borough_Redbridge                                                                      3.989e+00
+Borough_Richmond                                                                       3.878e+00
+Borough_Southwark                                                                      4.023e+00
+Borough_Sutton                                                                         3.909e+00
+Borough_Tower.Hamlets                                                                  3.916e+00
+Borough_Waltham.Forest                                                                 3.951e+00
+Borough_Wandsworth                                                                     3.889e+00
+Borough_Westminster                                                                    4.173e+00
+                                                                                      t value
+(Intercept)                                                                             3.595
+Proportion..Good.Job..local                                                             2.689
+Proportion.Contact.ward.officer                                                        -0.472
+Proportion.Informed.local                                                              -0.857
+Proportion.Listen.to.concerns                                                           2.591
+Proportion.Treat.everyone.fairly                                                        2.357
+Proportion.Trust.MPS                                                                    2.137
+Proportion.Understand.issues                                                            3.122
+stops_cleaned_Search.Type_STOP_SEARCH                                                      NA
+strengths_cleaned_Rank.Constable                                                       -1.631
+strengths_cleaned_Rank.PSCO                                                            -1.927
+time_spent_cleaned_Abstraction.Type_Aid                                                -0.407
+time_spent_cleaned_Abstraction.Type_CAD                                                -1.320
+time_spent_cleaned_Abstraction.Type_Court                                              -1.300
+time_spent_cleaned_Abstraction.Type_Custody                                            -0.669
+time_spent_cleaned_Abstraction.Type_Local.Aid                                          -0.343
+time_spent_cleaned_Abstraction.Type_Not.Abstracted                                     -0.867
+time_spent_cleaned_Abstraction.Type_Staffing.Up                                        -0.008
+time_spent_cleaned_Abstraction.Type_Training                                           -1.001
+granular_cleaned_Household_6                                                            0.249
+granular_cleaned_Household_Other                                                        1.976
+granular_cleaned_Gender_Other                                                          -1.281
+granular_cleaned_Age_Refused                                                            0.318
+granular_cleaned_Orientation_Don.t.know                                                -0.614
+granular_cleaned_Orientation_Heterosexual                                              -1.536
+granular_cleaned_Orientation_Non.Heterosexual                                          -1.115
+granular_cleaned_Orientation_Non.Heterosexual..Gay..Lesbian..Bisexual..None.of.these.  -2.310
+granular_cleaned_Ethnicity_Mixed                                                        0.582
+granular_cleaned_Qualification_BTEC.Level.1                                             1.360
+granular_cleaned_Qualification_BTEC.level.2                                            -0.293
+granular_cleaned_Qualification_BTEC.level.3                                            -1.012
+granular_cleaned_Qualification_Don.t.know                                              -1.325
+granular_cleaned_Qualification_HNC.or.HND.BTEC.level.4                                  0.736
+granular_cleaned_Qualification_ONC..OND.or.City.and.Guilds                             -0.724
+granular_cleaned_Qualification_Other                                                   -1.624
+granular_cleaned_Qualification_Refused                                                  0.497
+granular_cleaned_Qualification_Trade.apprenticeship                                    -0.895
+granular_cleaned_Employment_Don.t.know                                                  0.063
+granular_cleaned_Employment_House.Person                                               -0.884
+granular_cleaned_Employment_House.person                                               -1.377
+granular_cleaned_Employment_Not.Working                                                -0.901
+granular_cleaned_Employment_Other                                                      -0.441
+granular_cleaned_Employment_Student.Education                                          -0.653
+granular_cleaned_Employment_Unemployed                                                 -0.900
+granular_cleaned_Employment_Working.PT                                                 -0.628
+use_of_force_cleaned_CED.Used                                                           1.654
+use_of_force_cleaned_Firearms.Aimed                                                     0.553
+time_spent_cleaned_Abstraction.Type_Aid_lag                                             0.535
+time_spent_cleaned_Abstraction.Type_CAD_lag                                            -1.602
+time_spent_cleaned_Abstraction.Type_Court_lag                                           2.563
+time_spent_cleaned_Abstraction.Type_Custody_lag                                         0.498
+time_spent_cleaned_Abstraction.Type_Local.Aid_lag                                       1.405
+time_spent_cleaned_Abstraction.Type_Not.Abstracted_lag                                 -2.402
+time_spent_cleaned_Abstraction.Type_Staffing.Up_lag                                    -0.492
+time_spent_cleaned_Abstraction.Type_Training_lag                                       -2.432
+use_of_force_cleaned_CED.Used_lag                                                      -1.593
+use_of_force_cleaned_Firearms.Aimed_lag                                                 0.256
+Borough_Barnet                                                                          0.521
+Borough_Bexley                                                                          1.013
+Borough_Brent                                                                           1.011
+Borough_Bromley                                                                         0.365
+Borough_Camden                                                                         -0.617
+Borough_Croydon                                                                        -0.760
+Borough_Ealing                                                                          0.829
+Borough_Enfield                                                                        -0.625
+Borough_Greenwich                                                                       1.003
+Borough_Hackney                                                                         1.184
+Borough_Hammersmith.and.Fulham                                                          1.116
+Borough_Haringey                                                                       -1.893
+Borough_Harrow                                                                          0.509
+Borough_Havering                                                                        0.347
+Borough_Hillingdon                                                                      0.629
+Borough_Hounslow                                                                        0.331
+Borough_Islington                                                                      -0.709
+Borough_Kensington.and.Chelsea                                                          1.929
+Borough_Kingston                                                                       -2.256
+Borough_Lambeth                                                                        -0.618
+Borough_Lewisham                                                                       -1.103
+Borough_Merton                                                                         -0.355
+Borough_Newham                                                                         -1.351
+Borough_Redbridge                                                                       0.500
+Borough_Richmond                                                                       -0.001
+Borough_Southwark                                                                       0.912
+Borough_Sutton                                                                          1.944
+Borough_Tower.Hamlets                                                                   0.405
+Borough_Waltham.Forest                                                                 -0.598
+Borough_Wandsworth                                                                     -0.578
+Borough_Westminster                                                                     1.270
+                                                                                      Pr(>|t|)
+(Intercept)                                                                           0.000339
+Proportion..Good.Job..local                                                           0.007274
+Proportion.Contact.ward.officer                                                       0.636748
+Proportion.Informed.local                                                             0.391706
+Proportion.Listen.to.concerns                                                         0.009689
+Proportion.Treat.everyone.fairly                                                      0.018602
+Proportion.Trust.MPS                                                                  0.032789
+Proportion.Understand.issues                                                          0.001842
+stops_cleaned_Search.Type_STOP_SEARCH                                                       NA
+strengths_cleaned_Rank.Constable                                                      0.103089
+strengths_cleaned_Rank.PSCO                                                           0.054187
+time_spent_cleaned_Abstraction.Type_Aid                                               0.683917
+time_spent_cleaned_Abstraction.Type_CAD                                               0.187122
+time_spent_cleaned_Abstraction.Type_Court                                             0.193974
+time_spent_cleaned_Abstraction.Type_Custody                                           0.503588
+time_spent_cleaned_Abstraction.Type_Local.Aid                                         0.731293
+time_spent_cleaned_Abstraction.Type_Not.Abstracted                                    0.386360
+time_spent_cleaned_Abstraction.Type_Staffing.Up                                       0.993778
+time_spent_cleaned_Abstraction.Type_Training                                          0.317038
+granular_cleaned_Household_6                                                          0.803609
+granular_cleaned_Household_Other                                                      0.048384
+granular_cleaned_Gender_Other                                                         0.200292
+granular_cleaned_Age_Refused                                                          0.750296
+granular_cleaned_Orientation_Don.t.know                                               0.539027
+granular_cleaned_Orientation_Heterosexual                                             0.124843
+granular_cleaned_Orientation_Non.Heterosexual                                         0.264990
+granular_cleaned_Orientation_Non.Heterosexual..Gay..Lesbian..Bisexual..None.of.these. 0.021067
+granular_cleaned_Ethnicity_Mixed                                                      0.560689
+granular_cleaned_Qualification_BTEC.Level.1                                           0.174003
+granular_cleaned_Qualification_BTEC.level.2                                           0.769608
+granular_cleaned_Qualification_BTEC.level.3                                           0.311635
+granular_cleaned_Qualification_Don.t.know                                             0.185533
+granular_cleaned_Qualification_HNC.or.HND.BTEC.level.4                                0.461609
+granular_cleaned_Qualification_ONC..OND.or.City.and.Guilds                            0.469352
+granular_cleaned_Qualification_Other                                                  0.104766
+granular_cleaned_Qualification_Refused                                                0.619421
+granular_cleaned_Qualification_Trade.apprenticeship                                   0.371241
+granular_cleaned_Employment_Don.t.know                                                0.950065
+granular_cleaned_Employment_House.Person                                              0.376669
+granular_cleaned_Employment_House.person                                              0.168645
+granular_cleaned_Employment_Not.Working                                               0.367570
+granular_cleaned_Employment_Other                                                     0.658994
+granular_cleaned_Employment_Student.Education                                         0.514180
+granular_cleaned_Employment_Unemployed                                                0.368550
+granular_cleaned_Employment_Working.PT                                                0.529992
+use_of_force_cleaned_CED.Used                                                         0.098345
+use_of_force_cleaned_Firearms.Aimed                                                   0.580302
+time_spent_cleaned_Abstraction.Type_Aid_lag                                           0.592730
+time_spent_cleaned_Abstraction.Type_CAD_lag                                           0.109362
+time_spent_cleaned_Abstraction.Type_Court_lag                                         0.010500
+time_spent_cleaned_Abstraction.Type_Custody_lag                                       0.618530
+time_spent_cleaned_Abstraction.Type_Local.Aid_lag                                     0.160341
+time_spent_cleaned_Abstraction.Type_Not.Abstracted_lag                                0.016487
+time_spent_cleaned_Abstraction.Type_Staffing.Up_lag                                   0.622958
+time_spent_cleaned_Abstraction.Type_Training_lag                                      0.015174
+use_of_force_cleaned_CED.Used_lag                                                     0.111501
+use_of_force_cleaned_Firearms.Aimed_lag                                               0.797695
+Borough_Barnet                                                                        0.602319
+Borough_Bexley                                                                        0.311369
+Borough_Brent                                                                         0.312115
+Borough_Bromley                                                                       0.714989
+Borough_Camden                                                                        0.537070
+Borough_Croydon                                                                       0.447222
+Borough_Ealing                                                                        0.407309
+Borough_Enfield                                                                       0.531844
+Borough_Greenwich                                                                     0.316178
+Borough_Hackney                                                                       0.236851
+Borough_Hammersmith.and.Fulham                                                        0.264588
+Borough_Haringey                                                                      0.058681
+Borough_Harrow                                                                        0.611045
+Borough_Havering                                                                      0.728521
+Borough_Hillingdon                                                                    0.529408
+Borough_Hounslow                                                                      0.741078
+Borough_Islington                                                                     0.478218
+Borough_Kensington.and.Chelsea                                                        0.053978
+Borough_Kingston                                                                      0.024243
+Borough_Lambeth                                                                       0.536773
+Borough_Lewisham                                                                      0.270294
+Borough_Merton                                                                        0.722934
+Borough_Newham                                                                        0.176840
+Borough_Redbridge                                                                     0.617044
+Borough_Richmond                                                                      0.999207
+Borough_Southwark                                                                     0.361918
+Borough_Sutton                                                                        0.052142
+Borough_Tower.Hamlets                                                                 0.685226
+Borough_Waltham.Forest                                                                0.550022
+Borough_Wandsworth                                                                    0.563483
+Borough_Westminster                                                                   0.204465
+                                                                                         
+(Intercept)                                                                           ***
+Proportion..Good.Job..local                                                           ** 
+Proportion.Contact.ward.officer                                                          
+Proportion.Informed.local                                                                
+Proportion.Listen.to.concerns                                                         ** 
+Proportion.Treat.everyone.fairly                                                      *  
+Proportion.Trust.MPS                                                                  *  
+Proportion.Understand.issues                                                          ** 
+stops_cleaned_Search.Type_STOP_SEARCH                                                    
+strengths_cleaned_Rank.Constable                                                         
+strengths_cleaned_Rank.PSCO                                                           .  
+time_spent_cleaned_Abstraction.Type_Aid                                                  
+time_spent_cleaned_Abstraction.Type_CAD                                                  
+time_spent_cleaned_Abstraction.Type_Court                                                
+time_spent_cleaned_Abstraction.Type_Custody                                              
+time_spent_cleaned_Abstraction.Type_Local.Aid                                            
+time_spent_cleaned_Abstraction.Type_Not.Abstracted                                       
+time_spent_cleaned_Abstraction.Type_Staffing.Up                                          
+time_spent_cleaned_Abstraction.Type_Training                                             
+granular_cleaned_Household_6                                                             
+granular_cleaned_Household_Other                                                      *  
+granular_cleaned_Gender_Other                                                            
+granular_cleaned_Age_Refused                                                             
+granular_cleaned_Orientation_Don.t.know                                                  
+granular_cleaned_Orientation_Heterosexual                                                
+granular_cleaned_Orientation_Non.Heterosexual                                            
+granular_cleaned_Orientation_Non.Heterosexual..Gay..Lesbian..Bisexual..None.of.these. *  
+granular_cleaned_Ethnicity_Mixed                                                         
+granular_cleaned_Qualification_BTEC.Level.1                                              
+granular_cleaned_Qualification_BTEC.level.2                                              
+granular_cleaned_Qualification_BTEC.level.3                                              
+granular_cleaned_Qualification_Don.t.know                                                
+granular_cleaned_Qualification_HNC.or.HND.BTEC.level.4                                   
+granular_cleaned_Qualification_ONC..OND.or.City.and.Guilds                               
+granular_cleaned_Qualification_Other                                                     
+granular_cleaned_Qualification_Refused                                                   
+granular_cleaned_Qualification_Trade.apprenticeship                                      
+granular_cleaned_Employment_Don.t.know                                                   
+granular_cleaned_Employment_House.Person                                                 
+granular_cleaned_Employment_House.person                                                 
+granular_cleaned_Employment_Not.Working                                                  
+granular_cleaned_Employment_Other                                                        
+granular_cleaned_Employment_Student.Education                                            
+granular_cleaned_Employment_Unemployed                                                   
+granular_cleaned_Employment_Working.PT                                                   
+use_of_force_cleaned_CED.Used                                                         .  
+use_of_force_cleaned_Firearms.Aimed                                                      
+time_spent_cleaned_Abstraction.Type_Aid_lag                                              
+time_spent_cleaned_Abstraction.Type_CAD_lag                                              
+time_spent_cleaned_Abstraction.Type_Court_lag                                         *  
+time_spent_cleaned_Abstraction.Type_Custody_lag                                          
+time_spent_cleaned_Abstraction.Type_Local.Aid_lag                                        
+time_spent_cleaned_Abstraction.Type_Not.Abstracted_lag                                *  
+time_spent_cleaned_Abstraction.Type_Staffing.Up_lag                                      
+time_spent_cleaned_Abstraction.Type_Training_lag                                      *  
+use_of_force_cleaned_CED.Used_lag                                                        
+use_of_force_cleaned_Firearms.Aimed_lag                                                  
+Borough_Barnet                                                                           
+Borough_Bexley                                                                           
+Borough_Brent                                                                            
+Borough_Bromley                                                                          
+Borough_Camden                                                                           
+Borough_Croydon                                                                          
+Borough_Ealing                                                                           
+Borough_Enfield                                                                          
+Borough_Greenwich                                                                        
+Borough_Hackney                                                                          
+Borough_Hammersmith.and.Fulham                                                           
+Borough_Haringey                                                                      .  
+Borough_Harrow                                                                           
+Borough_Havering                                                                         
+Borough_Hillingdon                                                                       
+Borough_Hounslow                                                                         
+Borough_Islington                                                                        
+Borough_Kensington.and.Chelsea                                                        .  
+Borough_Kingston                                                                      *  
+Borough_Lambeth                                                                          
+Borough_Lewisham                                                                         
+Borough_Merton                                                                           
+Borough_Newham                                                                           
+Borough_Redbridge                                                                        
+Borough_Richmond                                                                         
+Borough_Southwark                                                                        
+Borough_Sutton                                                                        .  
+Borough_Tower.Hamlets                                                                    
+Borough_Waltham.Forest                                                                   
+Borough_Wandsworth                                                                       
+Borough_Westminster                                                                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 15.85 on 1097 degrees of freedom
+Multiple R-squared:  0.227,	Adjusted R-squared:  0.1664 
+F-statistic: 3.745 on 86 and 1097 DF,  p-value: < 2.2e-16

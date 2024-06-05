@@ -125,7 +125,7 @@ if not clean_stops_path.exists():
 
 def clean_custody_arrest(path):
     df = pd.read_csv(path)
-    df['Date'] = pd.to_datetime(df['date'], format = '%d/%m/%Y')
+    df['Date'] = pd.to_datetime(df['date'], format = '%m/%d/%Y')
     df['Date'] = pd.to_datetime(df['Date']).dt.to_period('M').dt.to_timestamp()
     df.drop(columns=['date'], inplace=True)
     return df
@@ -174,3 +174,28 @@ if not clean_ethnic_groups_path.exists():
     ethnic_groups_path = data_path / 'ethnic-groups.csv'
     ethnic_groups = clean_ethnic_groups(ethnic_groups_path)
     ethnic_groups.to_csv(clean_ethnic_groups_path, index=False)
+
+def clean_outcomes(path):
+    df = pd.read_csv(path)
+    df['Borough'] = df['LSOA name'].str.extract(r'([a-zA-Z ]+)')
+    # strip the borough column
+    df['Borough'] = df['Borough'].str.strip()
+    df['Date'] = pd.to_datetime(df['Month'], format='%Y-%m')
+    df.drop(columns=['Crime ID', 'Reported by', 'Falls within', 'Longitude', 'Latitude', 'Location', 'LSOA code', 'LSOA name', 'Month', 'Unnamed: 0'], inplace=True)
+    df = pd.get_dummies(df, columns=['Outcome type'], dtype=int)
+    # frop NA values
+    df.dropna(inplace=True)
+    # add a total column with only 1s
+    df['Total'] = 1
+    df = df.groupby(['Date', 'Borough']).sum().reset_index()
+    df['Date'] = pd.to_datetime(df['Date']).dt.to_period('M').dt.to_timestamp()
+    return df
+
+
+
+
+clean_outcomes_path = clean_data_path / 'outcomes_cleaned.csv'
+if not clean_outcomes_path.exists():
+    outcomes_path = data_path / 'outcomes.csv'
+    outcomes = clean_outcomes(outcomes_path)
+    outcomes.to_csv(clean_outcomes_path, index=False)
