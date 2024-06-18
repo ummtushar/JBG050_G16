@@ -3,7 +3,7 @@ from pathlib import Path
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 EDA = False # set to True to show the head of each dataset
-data_path = Path('data/Final datasets cleaned')
+data_path = Path('../data/Final datasets cleaned')
 yearly_data = ['employment_cleaned.csv', 'ethnic_groups_cleaned.csv']
 
 if EDA:

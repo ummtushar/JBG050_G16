@@ -9,7 +9,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Pairplot to visualize relationships
-data_path = Path('data/Final datasets cleaned/combined_data.csv')
+data_path = Path('../data/Final datasets cleaned/combined_data.csv')
 df = pd.read_csv(data_path)
 #print(df.columns)
 #sns.pairplot(df)
