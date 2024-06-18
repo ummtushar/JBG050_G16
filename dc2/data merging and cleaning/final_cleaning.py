@@ -1,7 +1,8 @@
 import pandas as pd
 from pathlib import Path
+# needs raw
 
-data_path = Path('data/Final datasets raw')
+data_path = Path('../data/Final datasets raw')
 clean_data_path = Path('../data/Final datasets cleaned')
 
 # Define the datasets that have been pre-processed propperly

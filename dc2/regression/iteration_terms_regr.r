@@ -1,9 +1,10 @@
+# experements with interaction terms
 
 # Load necessary libraries
 library(dplyr)
 
 # Step 1: Load the CSV file into a data frame
-data <- read.csv("data/Final datasets cleaned/combined_data.csv")
+data <- read.csv("../data/Final datasets cleaned/combined_data.csv")
 
 
 column_names <- colnames(data)

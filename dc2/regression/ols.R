@@ -18,7 +18,7 @@ library(DAAG)
 library(dplyr)
 
 # Read the data
-data <- read.csv("data/combined_data(in).csv")
+data <- read.csv("../data/Final datasets cleaned/combined_data(in).csv")
 
 # Fit the model
 m1 <- lm(data = data, formula = Y ~ .)

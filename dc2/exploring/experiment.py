@@ -9,7 +9,7 @@ import geopandas as gpd
 from matplotlib.colors import Normalize, rgb2hex
 from branca.colormap import LinearColormap
 
-df = pd.read_csv('data/Borough-Table 1.csv', delimiter = ';')  
+df = pd.read_csv('../data/Final datasets raw/Borough-Table 1.csv', delimiter = ';')
 df = df[['Date', 'Survey', 'Borough', 'Measure', 'Proportion', 'MPS']]
 
 #LDA

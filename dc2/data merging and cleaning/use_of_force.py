@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-data_path = Path("data/use_of_force.csv")
+data_path = Path("../data/Final datasets raw/use_of_force.csv")
 
 # Read the data
 use_of_force = pd.read_csv(data_path, delimiter=";")
@@ -30,5 +30,5 @@ use_of_force["UseOfForceCount"] = 1
 use_of_force = use_of_force.groupby(["IncidentDate", "Borough"]).sum().reset_index()
 print(use_of_force.head())
 
-save_path = Path("data/use_of_force_cleaned.csv")
+save_path = Path("../data/Final datasets cleaned/use_of_force_cleaned.csv")
 use_of_force.to_csv(save_path, index=False)

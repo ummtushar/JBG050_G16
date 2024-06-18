@@ -1,6 +1,7 @@
 import pandas as pd
 from pathlib import Path
 from statsmodels.stats.outliers_influence import variance_inflation_factor
+# good
 
 EDA = False # set to True to show the head of each dataset
 data_path = Path('../data/Final datasets cleaned')
@@ -178,7 +179,7 @@ main_df = pd.get_dummies(main_df, columns=['Year', 'Month'], drop_first=True, dt
 main_df.fillna(main_df.mean(), inplace=True)
 # Add a date column in unix time
 main_df['Date'] = pd.to_datetime(main_df['Date'])
-main_df['Date'] = main_df['Date'].astype(int) / 10**9
+main_df['Date'] = main_df['Date'].astype('int64') / 10**9
 
 
 

@@ -1,7 +1,8 @@
 import pandas as pd
 from pathlib import Path
+# needs raw data
 
-custody_arrests_path = Path("data/custody_arrests.csv")
+custody_arrests_path = Path("../data/Final datasets raw/custody_arrests.csv")
 df = pd.read_csv(custody_arrests_path, delimiter=";")
 
 #merge year and month into one date column
@@ -34,7 +35,7 @@ df = pd.merge(df, mean_arrests, on="date")
 print(df.head())
 
 # save the data
-save_path = Path("data/custody_arrests_cleaned.csv")
+save_path = Path("data/Final datasets cleaned/custody_arrests_cleaned.csv")
 df.to_csv(save_path, index=False)
 
 

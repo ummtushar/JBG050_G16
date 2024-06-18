@@ -1,7 +1,8 @@
+# working
 
 # load the data
 #data <- read.csv("data/Final datasets cleaned/no_multicollinearity.csv")
-data <- read.csv("data/Final datasets cleaned/combined_data.csv")
+data <- read.csv("../data/Final datasets cleaned/combined_data.csv")
 
 # print the columns
 

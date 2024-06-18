@@ -8,6 +8,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+# outdated
+
 # Pairplot to visualize relationships
 data_path = Path('../data/Final datasets cleaned/combined_data.csv')
 df = pd.read_csv(data_path)

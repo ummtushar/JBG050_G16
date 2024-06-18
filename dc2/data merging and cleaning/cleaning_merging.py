@@ -3,7 +3,7 @@ import numpy as np
 import os
 from pathlib import Path
 import re
-
+# missing raw datasets
 
 
 def merging(dt, merging_on, savelocation):
@@ -28,11 +28,11 @@ def merging(dt, merging_on, savelocation):
     return df
 
 # Fill in which data to clean/merge into one
-data = "data/new"
+data = "data/Final datasets raw"
 # Fill in which files should be cleaned/merged
 filename = "metropolitan-stop-and-search"
 # Fill in where cleaned/merged data should go
-finished = "data/cleaned_merged"
+finished = "data/Final datasets cleaned"
 #merging(data, filename, finished)
 
 
